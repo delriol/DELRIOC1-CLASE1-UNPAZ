@@ -1,6 +1,5 @@
 package ar.com.unpaz.archivos.model;
 
-
 public class Vial {
 	private int Id;
 	private String Descripcion;
