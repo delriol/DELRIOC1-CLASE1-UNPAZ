@@ -1,17 +1,17 @@
-package ar.com.unpaz.archivos.DAO;
-import java.io.File;
-import java.util.Scanner;
+package ar.com.unpaz.archivos.daoimp;
+import ar.com.unpaz.archivos.DAO.LecturayEscritura;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
 import java.io.Writer;
+import java.util.Scanner;
 
-
-public class LecturaYEscritura {
-	public static void main(String[] args) {
+public abstract class LecturaYEscrituraimp implements LecturayEscritura {
+	public void Lectura (String[] args) {
 		File sFile = new File("C:\\\\Users\\\\leand\\\\OneDrive\\\\Documentos\\\\GitHub\\\\delrioc1-clase1/vial.csv");
 		Scanner s = null;
 
@@ -61,4 +61,6 @@ public class LecturaYEscritura {
 		}
 	}
 	}
+
+
 
